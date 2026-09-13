@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Fahmi Alfarizi — Full Stack Developer & IT Student</title>
+  <meta name="description"
+    content="Portofolio Muhammad Fahmi Alfarizi - Mahasiswa Teknik Informatika Universitas Pamulang & Full Stack Web Developer.">
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-theme">
+
+  <!-- Header & Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-avatar">MF</span>
+        <span class="brand-name">Fahmi Alfarizi</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link">Tentang</a>
+        <a href="#skills" class="nav-link">Keahlian</a>
+        <a href="#projects" class="nav-link">Proyek</a>
+        <a href="#experience" class="nav-link">Pengalaman</a>
+        <a href="#certifications" class="nav-link">Sertifikasi</a>
+        <a href="#contact" class="nav-link">Kontak</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION 1: HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Halo, Saya <br>
+            <span class="text-highlight">Muhammad Fahmi Alfarizi</span>
+          </h1>
+
+          <p class="hero-description">
+            Full Stack Web Developer yang berfokus pada pembangunan sistem informasi, aplikasi web modern, dan sistem
+            pendukung keputusan yang cepat, terstruktur, serta berorientasi pada kebutuhan pengguna.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-layer-group"></i> Lihat Proyek
+            </a>
+            <a href="https://wa.me/6281289842670" target="_blank" class="btn btn-secondary">
+              <i class="fa-brands fa-whatsapp"></i> Hubungi WhatsApp
+            </a>
+            <button type="button" class="btn btn-outline" id="quickCvBtn">
+              <i class="fa-solid fa-file-arrow-down"></i> Unduh CV
+            </button>
+            <button class="btn btn-ghost" id="copyEmailHeroBtn">
+              <i class="fa-regular fa-copy"></i> Salin Email
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-card">
+            <img src="DSC_6648_4x6.jpg.jpeg" alt="Muhammad Fahmi Alfarizi" class="avatar-image">
+            <div class="avatar-overlay-card">
+              <div class="overlay-icon"><i class="fa-solid fa-code"></i></div>
+              <div class="overlay-info">
+                <strong>Full Stack Developer</strong>
+                <span>Python · Next.js · PHP · MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: TENTANG SAYA & KEAHLIAN -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">PROFIL &amp; LATAR BELAKANG</span>
+          <h2 class="section-title">Tentang Saya</h2>
+          <p class="section-subtitle">
+            Pengenalan singkat mengenai minat, latar belakang akademik, dan keahlian teknis saya.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Biography Card -->
+          <div class="card about-card">
+            <h3 class="card-title"><i class="fa-solid fa-user-tie"></i> Ringkasan Profil</h3>
+            <p>
+              Saya adalah Mahasiswa Teknik Informatika Universitas Pamulang yang memiliki minat besar dalam bidang
+              pengembangan website, sistem informasi, dan teknologi digital.
+            </p>
+            <p>
+              Memiliki pengalaman nyata dalam pembuatan sistem berbasis web, mulai dari perancangan alur sistem,
+              pembuatan tampilan antarmuka frontend yang responsif, pengelolaan basis data, hingga proses deployment
+              aplikasi. Terbiasa menggunakan HTML, CSS, JavaScript, PHP, MySQL, Python, Django, Tailwind CSS, Next.js,
+              Node.js, React, serta tools pendukung seperti VS Code, ChatGPT, dan Gemini.
+            </p>
+            <p>
+              Saya merupakan pribadi yang disiplin, bertanggung jawab, cepat belajar, mudah beradaptasi, serta mampu
+              bekerja secara mandiri maupun dalam tim.
+            </p>
+          </div>
+
+          <!-- Right Column: Education & Soft Skills -->
+          <div class="about-side-stack">
+            <div class="card info-card">
+              <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="card-content">
+                <h4>Pendidikan</h4>
+                <strong>Universitas Pamulang</strong>
+                <p>Teknik Informatika (2022 – 2026)</p>
+                <span class="chip chip-success"><i class="fa-solid fa-star"></i> IPK: 3.47 / 4.00</span>
+              </div>
+            </div>
+
+            <div class="card info-card">
+              <div class="card-icon"><i class="fa-solid fa-certificate"></i></div>
+              <div class="card-content">
+                <h4>Sertifikasi Utama</h4>
+                <ul class="clean-list">
+                  <li><strong>BNSP Pemrogram:</strong> Okupasi Pemrogram Komputer (Juli 2026)</li>
+                  <li><strong>Software Engineering:</strong> Fundamental Course (Sep 2024)</li>
+                  <li><strong>Data Analytics:</strong> Intro to Data Analytics RevoU (Nov 2024)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card info-card">
+              <div class="card-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+              <div class="card-content">
+                <h4>Soft Skills</h4>
+                <div class="chip-group">
+                  <span class="chip">Disiplin &amp; Tanggung Jawab</span>
+                  <span class="chip">Manajemen Waktu</span>
+                  <span class="chip">Komunikasi Baik</span>
+                  <span class="chip">Kerja Sama Tim</span>
+                  <span class="chip">Cepat Belajar</span>
+                  <span class="chip">Mudah Beradaptasi</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: KEAHLIAN TEKNIS (SKILLS) -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">COMPETENCIES</span>
+          <h2 class="section-title">Keahlian Teknis</h2>
+          <p class="section-subtitle">Teknologi dan tools yang terbiasa saya gunakan dalam pengembangan perangkat lunak.
+          </p>
+        </div>
+
+        <div class="skills-categories-grid">
+
+          <!-- Category 1: Programming & Languages -->
+          <div class="card skill-category-card">
+            <div class="category-header">
+              <i class="fa-solid fa-code"></i>
+              <h3>Bahasa Pemrograman</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-badge"><i class="fa-brands fa-html5"></i> HTML5 &amp; CSS3</div>
+              <div class="skill-badge"><i class="fa-brands fa-js"></i> JavaScript (ES6+)</div>
+              <div class="skill-badge"><i class="fa-brands fa-php"></i> PHP Native</div>
+              <div class="skill-badge"><i class="fa-brands fa-python"></i> Python</div>
+              <div class="skill-badge"><i class="fa-brands fa-java"></i> Java</div>
+            </div>
+          </div>
+
+          <!-- Category 2: Frameworks & Libraries -->
+          <div class="card skill-category-card">
+            <div class="category-header">
+              <i class="fa-solid fa-cubes"></i>
+              <h3>Framework &amp; Library</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-badge"><i class="fa-solid fa-N"></i> Next.js 16 (App Router)</div>
+              <div class="skill-badge"><i class="fa-brands fa-react"></i> React 19</div>
+              <div class="skill-badge"><i class="fa-brands fa-node-js"></i> Node.js</div>
+              <div class="skill-badge"><i class="fa-solid fa-server"></i> Django Framework</div>
+              <div class="skill-badge"><i class="fa-solid fa-wind"></i> Tailwind CSS v4</div>
+              <div class="skill-badge"><i class="fa-brands fa-bootstrap"></i> Bootstrap</div>
+            </div>
+          </div>
+
+          <!-- Category 3: Database & Tools -->
+          <div class="card skill-category-card">
+            <div class="category-header">
+              <i class="fa-solid fa-database"></i>
+              <h3>Database &amp; Tools</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-badge"><i class="fa-solid fa-database"></i> MySQL &amp; SQL</div>
+              <div class="skill-badge"><i class="fa-solid fa-layer-group"></i> Prisma ORM</div>
+              <div class="skill-badge"><i class="fa-solid fa-code-branch"></i> Git &amp; GitHub</div>
+              <div class="skill-badge"><i class="fa-solid fa-laptop-code"></i> Visual Studio Code</div>
+              <div class="skill-badge"><i class="fa-solid fa-robot"></i> AI Tools (ChatGPT, Gemini, Claude)</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: RECAP PROYEK -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">PORTOFOLIO</span>
+          <h2 class="section-title">Proyek Unggulan</h2>
+          <p class="section-subtitle">
+            Kumpulan proyek sistem informasi dan aplikasi web yang telah saya bangun dengan arsitektur modern.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project Card 1: Food Ordering -->
+          <article class="card project-card">
+            <div class="project-media">
+              <img src="Food Order/Dashboard.png" alt="Sistem Pemesanan Makanan Berbasis Web">
+              <span class="project-tag">Full Stack Web</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Sistem Pemesanan Makanan Berbasis Web</h3>
+              <p class="project-desc">
+                Refaktor codebase dari PHP Native ke Next.js 16 (App Router) &amp; React 19. Dilengkapi fitur
+                autentikasi JWT, RBAC Middleware, Live Invoice Panel, katalog interaktif, dan Prisma ORM dengan MySQL.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-chip">Next.js 16</span>
+                <span class="tech-chip">React 19</span>
+                <span class="tech-chip">Tailwind CSS</span>
+                <span class="tech-chip">Prisma ORM</span>
+                <span class="tech-chip">MySQL</span>
+              </div>
+              <button class="btn btn-outline btn-block" onclick="openProjectModal('food-order')">
+                <i class="fa-solid fa-circle-info"></i> Detail Proyek Complete
+              </button>
+            </div>
+          </article>
+
+          <!-- Project Card 2: SPK Band Lokal -->
+          <article class="card project-card">
+            <div class="project-media">
+              <img src="Web/SPK EO/3 Dashboard Admin.png" alt="SPK Pemilihan Band Lokal">
+              <span class="project-tag">SPK (AHP &amp; TOPSIS)</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">SPK Pemilihan Band Lokal (Spotify API)</h3>
+              <p class="project-desc">
+                Sistem Pendukung Keputusan perankingan band lokal menggunakan kombinasi metode AHP dan TOPSIS yang
+                terintegrasi secara otomatis dengan Spotify Web API untuk mengambil data statistik riil.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">Django</span>
+                <span class="tech-chip">MySQL</span>
+                <span class="tech-chip">Spotify Web API</span>
+                <span class="tech-chip">AHP &amp; TOPSIS</span>
+              </div>
+              <button class="btn btn-outline btn-block" onclick="openProjectModal('spk-band')">
+                <i class="fa-solid fa-circle-info"></i> Detail Proyek Complete
+              </button>
+            </div>
+          </article>
+
+          <!-- Project Card 3: SPK Siswa Berprestasi -->
+          <article class="card project-card">
+            <div class="project-media">
+              <img src="SPK MOORA/Dashboard.png" alt="SPK Penentuan Siswa Berprestasi">
+              <span class="project-tag">SPK (MOORA Method)</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">SPK Penentuan Siswa Berprestasi</h3>
+              <p class="project-desc">
+                Sistem pendukung keputusan perankingan siswa berprestasi berbasis metode MOORA dengan kriteria Benefit
+                dan Cost terperinci untuk menghasilkan penentuan yang transparan dan objektif.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-chip">PHP</span>
+                <span class="tech-chip">MySQL</span>
+                <span class="tech-chip">Bootstrap</span>
+                <span class="tech-chip">MOORA Method</span>
+              </div>
+              <button class="btn btn-outline btn-block" onclick="openProjectModal('spk-siswa')">
+                <i class="fa-solid fa-circle-info"></i> Detail Proyek Complete
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: PENGALAMAN KERJA & MAGANG -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">REKAM JEJAK</span>
+          <h2 class="section-title">Pengalaman Kerja &amp; Magang</h2>
+          <p class="section-subtitle">Pengalaman nyata dalam perancangan dan pembuatan aplikasi berbasis web.</p>
+        </div>
+
+        <div class="experience-grid">
+          <!-- Left Column: Work & Internship Description -->
+          <div class="card experience-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Full Stack Developer</h3>
+                <span class="timeline-company">Perancangan Aplikasi Presensi Siswa</span>
+              </div>
+              <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Februari – Juli 2025</span>
+            </div>
+
+            <ul class="timeline-details">
+              <li>Mengembangkan fitur autentikasi dan hak akses pengguna untuk role Admin dan Guru.</li>
+              <li>Mengembangkan modul presensi yang memungkinkan guru memilih kelas dan mata pelajaran, lalu mencatat
+                status kehadiran siswa (Hadir, Izin, Sakit, Alpa).</li>
+              <li>Mengembangkan fitur rekapitulasi presensi berdasarkan kelas, mata pelajaran, dan periode waktu.</li>
+              <li>Mengimplementasikan fitur ekspor data presensi otomatis ke file Excel.</li>
+              <li>Mengembangkan dashboard statistik dan antarmuka aplikasi responsif menggunakan Tailwind CSS.</li>
+              <li>Merancang basis data menggunakan MySQL serta melakukan pemodelan sistem menggunakan ERD dan UML.</li>
+              <li>Melakukan pengujian fitur utama (Login, Presensi, Rekapitulasi, Ekspor Data, Logout).</li>
+            </ul>
+
+            <div class="timeline-tech">
+              <strong>Tech Stack:</strong> Python, Django Framework, MySQL, HTML, CSS, JavaScript, Tailwind CSS.
+            </div>
+          </div>
+
+          <!-- Right Column: Presensi MTs Project Showcase -->
+          <div class="card project-card experience-project-card">
+            <div class="project-media">
+              <img src="Presensi MTs/Dashboard.png" alt="Sistem Informasi Presensi Siswa MTs">
+              <span class="project-tag">Hasil Proyek Magang</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Sistem Informasi Presensi Siswa MTs</h3>
+              <p class="project-desc">
+                Sistem pengelolaan dan pencatatan presensi siswa berbasis web yang dibangun selama masa
+                magang/pengembangan sistem.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">Django</span>
+                <span class="tech-chip">MySQL</span>
+                <span class="tech-chip">Tailwind CSS</span>
+                <span class="tech-chip">Excel Export</span>
+              </div>
+              <button class="btn btn-outline btn-block" onclick="openProjectModal('presensi-mts')">
+                <i class="fa-solid fa-circle-info"></i> Detail Proyek Complete
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: SERTIFIKASI & PELATIHAN -->
+    <section class="section certifications-section" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">KUALIFIKASI AKREDITASI</span>
+          <h2 class="section-title">Sertifikasi &amp; Pelatihan</h2>
+          <p class="section-subtitle">Daftar sertifikasi kompetensi resmi dan program pelatihan profesional yang telah
+            diselesaikan.</p>
+        </div>
+
+        <div class="certifications-grid">
+
+          <!-- Cert 1: BNSP -->
+          <div class="card cert-card">
+            <div class="cert-header">
+              <div class="cert-icon-wrapper">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <span class="chip chip-success">Sertifikasi BNSP</span>
+            </div>
+            <div class="cert-body">
+              <h3 class="cert-title">Sertifikasi Kompetensi Okupasi Pemrogram</h3>
+              <p class="cert-issuer">Badan Nasional Sertifikasi Profesi (BNSP)</p>
+              <div class="cert-date"><i class="fa-regular fa-calendar-check"></i> Juli 2026</div>
+              <p class="cert-desc">
+                Sertifikasi standar kompetensi nasional untuk kualifikasi profesional Pemrogram Komputer, menguji
+                kemampuan pengembangan perangkat lunak, struktur logika, dan standar penulisan kode.
+              </p>
+            </div>
+          </div>
+
+          <!-- Cert 2: Software Engineering -->
+          <div class="card cert-card">
+            <div class="cert-header">
+              <div class="cert-icon-wrapper">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <span class="chip">Pelatihan SE</span>
+            </div>
+            <div class="cert-body">
+              <h3 class="cert-title">Fundamental Course Software Engineering</h3>
+              <p class="cert-issuer">RevoU</p>
+              <div class="cert-date"><i class="fa-regular fa-calendar-check"></i> September 2024</div>
+              <p class="cert-desc">
+                Program pelatihan intensif seputar fundamental rekayasa perangkat lunak, arsitektur aplikasi, metodologi
+                SDLC, serta best practice penulisan kode yang efisien.
+              </p>
+            </div>
+          </div>
+
+          <!-- Cert 3: Data Analytics RevoU -->
+          <div class="card cert-card">
+            <div class="cert-header">
+              <div class="cert-icon-wrapper">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <span class="chip">Data &amp; Analytics</span>
+            </div>
+            <div class="cert-body">
+              <h3 class="cert-title">Intro to Data Analytics</h3>
+              <p class="cert-issuer">RevoU</p>
+              <div class="cert-date"><i class="fa-regular fa-calendar-check"></i> November 2024</div>
+              <p class="cert-desc">
+                Pelatihan dasar analisis data, pemrosesan data statistik, visualisasi data, dan penarikan wawasan
+                berbasis data untuk mendukung pembuatan keputusan (data-driven decision making).
+              </p>
+            </div>
+          </div>
+
+          <!-- Cert 4: TOEFL Test -->
+          <div class="card cert-card">
+            <div class="cert-header">
+              <div class="cert-icon-wrapper">
+                <i class="fa-solid fa-language"></i>
+              </div>
+              <span class="chip">Sertifikasi Bahasa</span>
+            </div>
+            <div class="cert-body">
+              <h3 class="cert-title">Tes Kemahiran Bahasa Inggris (TOEFL)</h3>
+              <p class="cert-issuer">Lembaga Bahasa Universitas Pamulang</p>
+              <div class="cert-date"><i class="fa-regular fa-calendar-check"></i> November 2025</div>
+              <p class="cert-desc">
+                Sertifikasi tes kecakapan dan kemahiran komunikasi berbahasa Inggris yang diselenggarakan oleh Lembaga Bahasa Universitas Pamulang.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: KONTAK -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="card contact-main-card">
+          <div class="contact-grid">
+            <div class="contact-info">
+              <span class="section-tag">HUBUNGI SAYA</span>
+              <h2 class="contact-title">Mari Berkolaborasi</h2>
+              <p class="contact-text">
+                Saya selalu terbuka untuk kesempatan karir, proyek pembuatan website, maupun diskusi seputar
+                pengembangan sistem informasi.
+              </p>
+
+              <div class="contact-details-list">
+                <a href="https://wa.me/6281289842670" target="_blank" class="contact-item">
+                  <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                  <div>
+                    <span>Telepon / WhatsApp</span>
+                    <strong>0812-8984-2670</strong>
+                  </div>
+                </a>
+
+                <div class="contact-item" id="emailCopyContainer" style="cursor: pointer;">
+                  <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
+                  <div>
+                    <span>Email</span>
+                    <strong id="contactEmailText">fahmimal99@gmail.com</strong>
+                  </div>
+                  <button type="button" class="btn-icon" id="copyEmailIconBtn" title="Salin Email">
+                    <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+
+                <a href="https://github.com/Fahmizzy" target="_blank" class="contact-item">
+                  <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                  <div>
+                    <span>GitHub</span>
+                    <strong>github.com/Fahmizzy</strong>
+                  </div>
+                </a>
+
+                <a href="https://linkedin.com/in/muhammad-fahmi-alfarizi" target="_blank" class="contact-item">
+                  <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                  <div>
+                    <span>LinkedIn</span>
+                    <strong>linkedin.com/in/muhammad-fahmi-alfarizi</strong>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-card-side">
+              <div class="profile-card">
+                <img src="DSC_6648_4x6.jpg.jpeg" alt="Muhammad Fahmi Alfarizi" class="profile-thumb">
+                <h3>Muhammad Fahmi Alfarizi</h3>
+                <p>Mahasiswa Teknik Informatika · Full Stack Developer</p>
+                <div class="profile-actions">
+                  <a href="https://wa.me/6281289842670" target="_blank" class="btn btn-primary btn-block">
+                    <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp
+                  </a>
+                  <button type="button" class="btn btn-outline btn-block" id="downloadCvContactBtn">
+                    <i class="fa-solid fa-download"></i> Unduh Ringkasan CV
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; <span id="year">2026</span> Muhammad Fahmi Alfarizi. All rights reserved.</p>
+      <a href="#hero" class="back-to-top"><i class="fa-solid fa-arrow-up"></i> Kembali ke Atas</a>
+    </div>
+  </footer>
+
+  <!-- Project Detail Modal -->
+  <div class="modal-backdrop" id="projectModal">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" onclick="closeProjectModal()">&times;</button>
+      <div class="modal-header">
+        <span class="badge-status" id="modalTag">PROJECT DETAIL</span>
+        <h3 class="modal-title" id="modalTitle">Judul Proyek</h3>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- Injected via JavaScript -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" onclick="closeProjectModal()">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
