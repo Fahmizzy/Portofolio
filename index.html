@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Muhammad Fahmi Alfarizi — Full Stack Developer & IT Student</title>
+  <title>Muhammad Fahmi Alfarizi — Portfolio</title>
   <meta name="description"
     content="Portofolio Muhammad Fahmi Alfarizi - Mahasiswa Teknik Informatika Universitas Pamulang & Full Stack Web Developer.">
 
-  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <!-- Google Fonts: Inter, Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
 
   <!-- FontAwesome Icons -->
@@ -21,26 +21,48 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="dark-theme">
+<body class="monochrome-theme">
 
-  <!-- Header & Navigation Bar -->
-  <header class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#hero" class="nav-brand">
-        <span class="brand-avatar">MF</span>
+  <!-- TOP SYSTEM CONTROL BAR -->
+  <div class="system-hud-bar">
+    <div class="hud-container">
+      <div class="hud-status">
+        <span class="hud-pulse"></span>
+        <span class="hud-label">PORTFOLIO v2.5</span>
+        <span class="hud-divider">|</span>
+        <span class="hud-sub">SYS STATUS: ONLINE</span>
+      </div>
+      <div class="hud-info">
+        <span><i class="fa-solid fa-location-dot"></i> Pamulang, Indonesia</span>
+        <span class="hud-divider">|</span>
+        <span><i class="fa-solid fa-graduation-cap"></i> UNPAM Informatika</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation Bar (Creatix Dark Pill Header) -->
+  <header class="navbar creatix-navbar" id="navbar">
+    <div class="nav-container creatix-nav-container">
+      <nav class="nav-menu-left">
+        <a href="#about" class="nav-link">Tentang</a>
+        <a href="#skills" class="nav-link">Keahlian</a>
+      </nav>
+
+      <a href="#hero" class="nav-brand creatix-brand">
+        <span class="brand-spark"><i class="fa-solid fa-sun"></i></span>
         <span class="brand-name">Fahmi Alfarizi</span>
       </a>
 
-      <nav class="nav-menu" id="navMenu">
-        <a href="#about" class="nav-link">Tentang</a>
-        <a href="#skills" class="nav-link">Keahlian</a>
+      <nav class="nav-menu-right">
         <a href="#projects" class="nav-link">Proyek</a>
         <a href="#experience" class="nav-link">Pengalaman</a>
-        <a href="#certifications" class="nav-link">Sertifikasi</a>
         <a href="#contact" class="nav-link">Kontak</a>
       </nav>
 
       <div class="nav-actions">
+        <button type="button" class="btn btn-nav-cv" id="quickCvBtnTop">
+          <i class="fa-solid fa-file-arrow-down"></i> Unduh CV
+        </button>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -49,62 +71,71 @@
   </header>
 
   <main>
-    <!-- SECTION 1: CREATIX DUAL-TONE HERO SECTION -->
-    <section class="hero-section" id="hero">
-      <div class="container hero-outer-container">
+    <!-- SECTION 1: CREATIX AGENCY HERO SECTION (ELEGANT MONOCHROME & HERO-FOTO) -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-creatix-container">
         
-        <!-- Light Top Container (Creatix Style) -->
-        <div class="hero-light-card">
-          <div class="hero-content">
-            <div class="starburst-badge">
-              <i class="fa-solid fa-asterisk"></i>
-            </div>
-            
-            <h1 class="hero-title">
-              Empowering Ideas <br>
-              Through <span class="text-highlight-cyan">Creative Code</span>
-            </h1>
+        <!-- Top Starburst & Title Header -->
+        <div class="creatix-hero-header">
+          <h1 class="creatix-hero-title">
+            Empowering Ideas <br>
+            Through <span class="text-highlight-dark">Creative Code</span>
+            <span class="sparkle-icon left-sparkle"><i class="fa-solid fa-asterisk"></i></span>
+            <span class="sparkle-icon right-sparkle"><i class="fa-solid fa-bolt"></i></span>
+          </h1>
+        </div>
 
-            <p class="hero-description">
-              Full Stack Web Developer yang berfokus pada pembangunan sistem informasi, aplikasi web modern, dan sistem pendukung keputusan yang cepat, terstruktur, serta berorientasi pada kebutuhan pengguna.
+        <!-- 3-Column Hero Grid: Left Bio, Center Cutout Portrait (hero-foto.png), Right Badges -->
+        <div class="creatix-hero-body">
+          <!-- Left Column -->
+          <div class="creatix-col-left">
+            <div class="curly-arrow-decoration"><i class="fa-solid fa-arrow-turn-down-right"></i></div>
+            <p class="creatix-hero-desc">
+              Halo, Saya <strong>Muhammad Fahmi Alfarizi</strong> — Full Stack Web Developer yang berfokus pada pembangunan sistem informasi, aplikasi web modern, dan sistem pendukung keputusan yang cepat, terstruktur, serta berorientasi pada kebutuhan pengguna.
             </p>
-
-            <div class="hero-buttons">
-              <a href="#projects" class="btn btn-cyan-primary">
-                <i class="fa-solid fa-layer-group"></i> Lihat Proyek
-              </a>
-              <a href="https://wa.me/6281289842670" target="_blank" class="btn btn-whatsapp">
-                <i class="fa-brands fa-whatsapp"></i> Hubungi WhatsApp
-              </a>
-              <button type="button" class="btn btn-light-outline" id="quickCvBtn">
-                <i class="fa-solid fa-file-arrow-down"></i> Unduh CV
-              </button>
-              <button class="btn btn-light-ghost" id="copyEmailHeroBtn">
+            <div class="creatix-left-actions">
+              <a href="#projects" class="btn btn-creatix-outline">Lihat Proyek</a>
+              <button class="btn btn-creatix-ghost" id="copyEmailHeroBtn">
                 <i class="fa-regular fa-copy"></i> Salin Email
               </button>
             </div>
           </div>
 
-          <div class="hero-visual">
-            <div class="avatar-card">
-              <img src="DSC_6648_4x6.jpg.jpeg" alt="Muhammad Fahmi Alfarizi" class="avatar-image">
-              <div class="floating-badge badge-exp">
-                <div class="rating-stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <strong>BNSP Certified</strong>
-                <span>Pemrogram Komputer</span>
+          <!-- Center Column: Portrait hero-foto.png -->
+          <div class="creatix-col-center">
+            <div class="creatix-circle-backdrop"></div>
+            <img src="hero-foto.png" alt="Muhammad Fahmi Alfarizi - Hero Cutout" class="batik-hero-cutout">
+
+            <!-- Bottom Glassmorphism Action Bar Container -->
+            <div class="creatix-glass-bar">
+              <a href="https://wa.me/6281289842670" target="_blank" class="btn btn-dark-primary">
+                Start Your Project
+              </a>
+              <button type="button" class="btn btn-glass-collaborate" id="quickCvBtn">
+                Let's Collaborate
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="creatix-col-right">
+            <div class="creatix-rating-card">
+              <div class="rating-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
-              <div class="floating-badge badge-role">
-                <div class="badge-icon-cyan"><i class="fa-solid fa-code"></i></div>
-                <div>
-                  <strong>Full Stack Developer</strong>
-                  <span>Next.js · Python · PHP</span>
-                </div>
+              <strong class="rating-number">3.47 IPK</strong>
+              <span class="rating-label">BNSP Certified Pemrogram</span>
+            </div>
+
+            <div class="creatix-role-badge">
+              <div class="role-icon-brown"><i class="fa-solid fa-code"></i></div>
+              <div>
+                <strong>Full Stack Developer</strong>
+                <span>Next.js · Python · PHP</span>
               </div>
             </div>
           </div>
@@ -136,85 +167,105 @@
       </div>
     </section>
 
-    <!-- CONTINUOUS MARQUEE TICKER BANNER -->
+    <!-- CONTINUOUS TICKER BANNER -->
     <div class="marquee-banner">
       <div class="marquee-content">
-        <span class="marquee-item"><i class="fa-solid fa-asterisk"></i> FULL STACK DEVELOPER</span>
-        <span class="marquee-item"><i class="fa-solid fa-asterisk"></i> NEXT.JS 16 &amp; REACT 19</span>
-        <span class="marquee-item"><i class="fa-solid fa-asterisk"></i> PYTHON &amp; DJANGO</span>
-        <span class="marquee-item"><i class="fa-solid fa-asterisk"></i> SPK AHP TOPSIS MOORA</span>
-        <span class="marquee-item"><i class="fa-solid fa-asterisk"></i> PRISMA ORM &amp; MYSQL</span>
-        <span class="marquee-item"><i class="fa-solid fa-asterisk"></i> TAILWIND CSS V4</span>
-        <span class="marquee-item"><i class="fa-solid fa-asterisk"></i> FULL STACK DEVELOPER</span>
-        <span class="marquee-item"><i class="fa-solid fa-asterisk"></i> NEXT.JS 16 &amp; REACT 19</span>
-        <span class="marquee-item"><i class="fa-solid fa-asterisk"></i> PYTHON &amp; DJANGO</span>
-        <span class="marquee-item"><i class="fa-solid fa-asterisk"></i> SPK AHP TOPSIS MOORA</span>
-        <span class="marquee-item"><i class="fa-solid fa-asterisk"></i> PRISMA ORM &amp; MYSQL</span>
-        <span class="marquee-item"><i class="fa-solid fa-asterisk"></i> TAILWIND CSS V4</span>
+        <span class="marquee-item"><i class="fa-solid fa-microchip"></i> FULL STACK DEVELOPER</span>
+        <span class="marquee-item"><i class="fa-solid fa-cube"></i> NEXT.JS 16 &amp; REACT 19</span>
+        <span class="marquee-item"><i class="fa-solid fa-network-wired"></i> PYTHON &amp; DJANGO</span>
+        <span class="marquee-item"><i class="fa-solid fa-diagram-project"></i> SPK AHP TOPSIS MOORA</span>
+        <span class="marquee-item"><i class="fa-solid fa-database"></i> PRISMA ORM &amp; MYSQL</span>
+        <span class="marquee-item"><i class="fa-solid fa-wind"></i> TAILWIND CSS V4</span>
+        <span class="marquee-item"><i class="fa-solid fa-microchip"></i> FULL STACK DEVELOPER</span>
+        <span class="marquee-item"><i class="fa-solid fa-cube"></i> NEXT.JS 16 &amp; REACT 19</span>
+        <span class="marquee-item"><i class="fa-solid fa-network-wired"></i> PYTHON &amp; DJANGO</span>
+        <span class="marquee-item"><i class="fa-solid fa-diagram-project"></i> SPK AHP TOPSIS MOORA</span>
+        <span class="marquee-item"><i class="fa-solid fa-database"></i> PRISMA ORM &amp; MYSQL</span>
+        <span class="marquee-item"><i class="fa-solid fa-wind"></i> TAILWIND CSS V4</span>
       </div>
     </div>
 
-    <!-- SECTION 2: TENTANG SAYA & KEAHLIAN -->
+    <!-- SECTION 2: TENTANG SAYA -->
     <section class="section about-section" id="about">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">PROFIL &amp; LATAR BELAKANG</span>
-          <h2 class="section-title">Turning Ideas Into <span class="text-highlight-cyan">Masterpieces</span></h2>
+          <span class="section-tag"><i class="fa-solid fa-sliders"></i> PROFIL &amp; LATAR BELAKANG</span>
+          <h2 class="section-title">Tentang <span class="text-highlight-brown">Saya</span></h2>
           <p class="section-subtitle">
-            Pengenalan singkat mengenai minat, latar belakang akademik, dan keahlian teknis saya.
+            Pengenalan singkat mengenai minat, latar belakang akademik dan keahlian teknis.
           </p>
         </div>
 
         <div class="about-grid">
           <!-- Left Column: Biography Card -->
-          <div class="card about-card">
-            <h3 class="card-title"><i class="fa-solid fa-user-tie"></i> Ringkasan Profil</h3>
-            <p>
-              Saya adalah Mahasiswa Teknik Informatika Universitas Pamulang yang memiliki minat besar dalam bidang pengembangan website, sistem informasi, dan teknologi digital.
-            </p>
-            <p>
-              Memiliki pengalaman nyata dalam pembuatan sistem berbasis web, mulai dari perancangan alur sistem, pembuatan tampilan antarmuka frontend yang responsif, pengelolaan basis data, hingga proses deployment aplikasi. Terbiasa menggunakan HTML, CSS, JavaScript, PHP, MySQL, Python, Django, Tailwind CSS, Next.js, Node.js, React, serta tools pendukung seperti VS Code, ChatGPT, dan Gemini.
-            </p>
-            <p>
-              Saya merupakan pribadi yang disiplin, bertanggung jawab, cepat belajar, mudah beradaptasi, serta mampu bekerja secara mandiri maupun dalam tim.
-            </p>
+          <div class="graphical-window about-window">
+            <div class="window-chrome">
+              <div class="window-dots">
+                <span class="dot dot-close"></span>
+                <span class="dot dot-minimize"></span>
+                <span class="dot dot-maximize"></span>
+              </div>
+            </div>
+            <div class="window-content about-body">
+              <h3 class="card-title"><i class="fa-solid fa-id-card"></i> Ringkasan Profil Professional</h3>
+              <p>
+                Saya adalah Mahasiswa Teknik Informatika Universitas Pamulang yang memiliki passion tinggi dalam bidang
+                rancang bangun sistem berbasis web, rekayasa perangkat lunak, dan arsitektur data.
+              </p>
+              <p>
+                Memiliki pengalaman praktis dari perancangan arsitektur antarmuka frontend responsif hingga pengelolaan
+                basis data backend. Terbiasa membangun aplikasi full stack menggunakan HTML5, CSS3, JavaScript, PHP,
+                MySQL, Python, Django, Tailwind CSS, Next.js 16, Node.js, React 19, serta workflow Git dan AI Tools
+                modern.
+              </p>
+              <p>
+                Saya berdedikasi tinggi, disiplin, berorientasi pada detail visual dan performa, serta adaptif dalam
+                menghadapi tantangan teknologi baru.
+              </p>
+            </div>
           </div>
 
-          <!-- Right Column: Education & Soft Skills -->
+          <!-- Right Column: Side Info Stack -->
           <div class="about-side-stack">
-            <div class="card info-card">
-              <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-              <div class="card-content">
-                <h4>Pendidikan</h4>
+            <!-- Education Box -->
+            <div class="graphical-info-box">
+              <div class="box-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="box-details">
+                <h4>Pendidikan Akademik</h4>
                 <strong>Universitas Pamulang</strong>
-                <p>Teknik Informatika (2022 – 2026)</p>
-                <span class="chip chip-cyan"><i class="fa-solid fa-star"></i> IPK: 3.47 / 4.00</span>
+                <p>S1 Teknik Informatika (2022 – 2026)</p>
+                <div class="graphical-progress-pill">
+                  <div class="progress-fill" style="width: 86.75%;"></div>
+                  <span><i class="fa-solid fa-star"></i> IPK: 3.47 / 4.00</span>
+                </div>
               </div>
             </div>
 
-            <div class="card info-card">
-              <div class="card-icon"><i class="fa-solid fa-certificate"></i></div>
-              <div class="card-content">
-                <h4>Sertifikasi Utama</h4>
-                <ul class="clean-list">
-                  <li><strong>BNSP Pemrogram:</strong> Okupasi Pemrogram Komputer (Juli 2026)</li>
-                  <li><strong>Software Engineering:</strong> Fundamental Course (Sep 2024)</li>
-                  <li><strong>Data Analytics:</strong> Intro to Data Analytics RevoU (Nov 2024)</li>
+            <!-- Certs Overview Box -->
+            <div class="graphical-info-box">
+              <div class="box-icon-brown"><i class="fa-solid fa-award"></i></div>
+              <div class="box-details">
+                <h4>Kualifikasi Utama</h4>
+                <ul class="graphical-list">
+                  <li><i class="fa-solid fa-check-double text-brown"></i> <strong>BNSP:</strong> Okupasi Pemrogram Komputer (2026)</li>
+                  <li><i class="fa-solid fa-check-double text-brown"></i> <strong>Software Engineering:</strong> RevoU Course (2024)</li>
+                  <li><i class="fa-solid fa-check-double text-brown"></i> <strong>Data Analytics:</strong> Intro to Analytics RevoU (2024)</li>
+                  <li><i class="fa-solid fa-check-double text-brown"></i> <strong>TOEFL Test:</strong> Lembaga Bahasa UNPAM (2025)</li>
                 </ul>
               </div>
             </div>
 
-            <div class="card info-card">
-              <div class="card-icon"><i class="fa-solid fa-heart-pulse"></i></div>
-              <div class="card-content">
-                <h4>Soft Skills</h4>
-                <div class="chip-group">
-                  <span class="chip">Disiplin &amp; Tanggung Jawab</span>
-                  <span class="chip">Manajemen Waktu</span>
-                  <span class="chip">Komunikasi Baik</span>
-                  <span class="chip">Kerja Sama Tim</span>
-                  <span class="chip">Cepat Belajar</span>
-                  <span class="chip">Mudah Beradaptasi</span>
+            <!-- Soft Skills Box -->
+            <div class="graphical-info-box">
+              <div class="box-icon"><i class="fa-solid fa-brain"></i></div>
+              <div class="box-details">
+                <h4>Soft Skills &amp; Working Style</h4>
+                <div class="skills-chip-cloud">
+                  <span class="chip-pill"><i class="fa-solid fa-bolt"></i> Disiplin &amp; Tanggung Jawab</span>
+                  <span class="chip-pill"><i class="fa-solid fa-clock"></i> Manajemen Waktu</span>
+                  <span class="chip-pill"><i class="fa-solid fa-comments"></i> Komunikasi Efektif</span>
+                  <span class="chip-pill"><i class="fa-solid fa-users"></i> Kerja Sama Tim</span>
+                  <span class="chip-pill"><i class="fa-solid fa-lightbulb"></i> Fast Learner</span>
                 </div>
               </div>
             </div>
@@ -223,144 +274,189 @@
       </div>
     </section>
 
-    <!-- SECTION 3: KEAHLIAN TEKNIS (SKILLS) -->
+    <!-- SECTION 3: KEAHLIAN TEKNIS -->
     <section class="section skills-section" id="skills">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">COMPETENCIES</span>
-          <h2 class="section-title">Keahlian <span class="text-highlight-cyan">Teknis</span></h2>
-          <p class="section-subtitle">Teknologi dan tools yang terbiasa saya gunakan dalam pengembangan perangkat lunak.</p>
+          <span class="section-tag"><i class="fa-solid fa-cpu"></i> TECH MATRIX</span>
+          <h2 class="section-title">Keahlian <span class="text-highlight-brown">Teknis &amp; Node Stack</span></h2>
+          <p class="section-subtitle">Ekosistem teknologi dan perangkat yang terbiasa digunakan dalam pengembangan perangkat lunak.</p>
         </div>
 
         <div class="skills-categories-grid">
-          <!-- Category 1: Programming & Languages -->
-          <div class="card skill-category-card">
-            <div class="category-header">
-              <i class="fa-solid fa-code"></i>
-              <h3>Bahasa Pemrograman</h3>
+          <!-- Category 1: Languages -->
+          <div class="graphical-window skill-window">
+            <div class="window-chrome">
+              <div class="window-dots">
+                <span class="dot dot-close"></span>
+                <span class="dot dot-minimize"></span>
+                <span class="dot dot-maximize"></span>
+              </div>
             </div>
-            <div class="skills-list">
-              <div class="skill-badge"><i class="fa-brands fa-html5"></i> HTML5 &amp; CSS3</div>
-              <div class="skill-badge"><i class="fa-brands fa-js"></i> JavaScript (ES6+)</div>
-              <div class="skill-badge"><i class="fa-brands fa-php"></i> PHP Native</div>
-              <div class="skill-badge"><i class="fa-brands fa-python"></i> Python</div>
-              <div class="skill-badge"><i class="fa-brands fa-java"></i> Java</div>
+            <div class="window-content skill-node-body">
+              <h3>Bahasa Pemrograman</h3>
+              <div class="skills-node-list">
+                <div class="node-badge"><i class="fa-brands fa-html5"></i> <span>HTML5 &amp; CSS3</span></div>
+                <div class="node-badge"><i class="fa-brands fa-js"></i> <span>JavaScript (ES6+)</span></div>
+                <div class="node-badge"><i class="fa-brands fa-php"></i> <span>PHP Native</span></div>
+                <div class="node-badge"><i class="fa-brands fa-python"></i> <span>Python</span></div>
+                <div class="node-badge"><i class="fa-brands fa-java"></i> <span>Java</span></div>
+              </div>
             </div>
           </div>
 
           <!-- Category 2: Frameworks & Libraries -->
-          <div class="card skill-category-card">
-            <div class="category-header">
-              <i class="fa-solid fa-cubes"></i>
-              <h3>Framework &amp; Library</h3>
+          <div class="graphical-window skill-window">
+            <div class="window-chrome">
+              <div class="window-dots">
+                <span class="dot dot-close"></span>
+                <span class="dot dot-minimize"></span>
+                <span class="dot dot-maximize"></span>
+              </div>
             </div>
-            <div class="skills-list">
-              <div class="skill-badge"><i class="fa-solid fa-N"></i> Next.js 16 (App Router)</div>
-              <div class="skill-badge"><i class="fa-brands fa-react"></i> React 19</div>
-              <div class="skill-badge"><i class="fa-brands fa-node-js"></i> Node.js</div>
-              <div class="skill-badge"><i class="fa-solid fa-server"></i> Django Framework</div>
-              <div class="skill-badge"><i class="fa-solid fa-wind"></i> Tailwind CSS v4</div>
-              <div class="skill-badge"><i class="fa-brands fa-bootstrap"></i> Bootstrap</div>
+            <div class="window-content skill-node-body">
+              <h3>Framework &amp; Library</h3>
+              <div class="skills-node-list">
+                <div class="node-badge brown"><i class="fa-solid fa-N"></i> <span>Next.js 16 (App Router)</span></div>
+                <div class="node-badge brown"><i class="fa-brands fa-react"></i> <span>React 19</span></div>
+                <div class="node-badge"><i class="fa-brands fa-node-js"></i> <span>Node.js</span></div>
+                <div class="node-badge"><i class="fa-solid fa-server"></i> <span>Django Framework</span></div>
+                <div class="node-badge brown"><i class="fa-solid fa-wind"></i> <span>Tailwind CSS v4</span></div>
+                <div class="node-badge"><i class="fa-brands fa-bootstrap"></i> <span>Bootstrap</span></div>
+              </div>
             </div>
           </div>
 
           <!-- Category 3: Database & Tools -->
-          <div class="card skill-category-card">
-            <div class="category-header">
-              <i class="fa-solid fa-database"></i>
-              <h3>Database &amp; Tools</h3>
+          <div class="graphical-window skill-window">
+            <div class="window-chrome">
+              <div class="window-dots">
+                <span class="dot dot-close"></span>
+                <span class="dot dot-minimize"></span>
+                <span class="dot dot-maximize"></span>
+              </div>
             </div>
-            <div class="skills-list">
-              <div class="skill-badge"><i class="fa-solid fa-database"></i> MySQL &amp; SQL</div>
-              <div class="skill-badge"><i class="fa-solid fa-layer-group"></i> Prisma ORM</div>
-              <div class="skill-badge"><i class="fa-solid fa-code-branch"></i> Git &amp; GitHub</div>
-              <div class="skill-badge"><i class="fa-solid fa-laptop-code"></i> Visual Studio Code</div>
-              <div class="skill-badge"><i class="fa-solid fa-robot"></i> AI Tools (ChatGPT, Gemini, Claude)</div>
+            <div class="window-content skill-node-body">
+              <h3>Database &amp; Tools</h3>
+              <div class="skills-node-list">
+                <div class="node-badge"><i class="fa-solid fa-database"></i> <span>MySQL &amp; Relational DB</span></div>
+                <div class="node-badge brown"><i class="fa-solid fa-layer-group"></i> <span>Prisma ORM</span></div>
+                <div class="node-badge"><i class="fa-solid fa-code-branch"></i> <span>Git &amp; GitHub Workflow</span></div>
+                <div class="node-badge"><i class="fa-solid fa-laptop-code"></i> <span>Visual Studio Code</span></div>
+                <div class="node-badge"><i class="fa-solid fa-robot"></i> <span>AI Agents &amp; Engineering</span></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 4: RECAP PROYEK UNGGULAN (3 PROJECTS) -->
+    <!-- SECTION 4: PROYEK UNGGULAN -->
     <section class="section projects-section" id="projects">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">PORTOFOLIO</span>
-          <h2 class="section-title">Proyek <span class="text-highlight-cyan">Unggulan</span></h2>
+          <span class="section-tag"><i class="fa-solid fa-window-restore"></i> APP SHOWCASE</span>
+          <h2 class="section-title">Proyek <span class="text-highlight-brown">Unggulan</span></h2>
           <p class="section-subtitle">
-            Kumpulan proyek sistem informasi dan aplikasi web yang telah saya bangun dengan arsitektur modern.
+            Kumpulan aplikasi web dan sistem pendukung keputusan yang dibangun dengan arsitektur modern.
           </p>
         </div>
 
         <div class="projects-grid">
-          <!-- Project Card 1: Food Ordering -->
-          <article class="card project-card">
-            <div class="project-media">
-              <img src="Food Order/Dashboard.png" alt="Sistem Pemesanan Makanan Berbasis Web">
-              <span class="project-tag">Full Stack Web</span>
+          <!-- Project Card 1: Food Order -->
+          <article class="graphical-window project-window">
+            <div class="window-chrome">
+              <div class="window-dots">
+                <span class="dot dot-close"></span>
+                <span class="dot dot-minimize"></span>
+                <span class="dot dot-maximize"></span>
+              </div>
             </div>
-            <div class="project-body">
+            
+            <div class="project-media-viewport">
+              <img src="Food Order/Dashboard.png" alt="Sistem Pemesanan Makanan Berbasis Web">
+              <span class="project-badge-tag"><i class="fa-solid fa-bolt"></i> Full Stack App</span>
+            </div>
+
+            <div class="project-body-content">
               <h3 class="project-title">Sistem Pemesanan Makanan Berbasis Web</h3>
               <p class="project-desc">
-                Refaktor codebase dari PHP Native ke Next.js 16 (App Router) &amp; React 19. Dilengkapi fitur autentikasi JWT, RBAC Middleware, Live Invoice Panel, katalog interaktif, dan Prisma ORM dengan MySQL.
+                Refaktor codebase dari PHP Native ke Next.js 16 &amp; React 19. Dilengkapi autentikasi JWT, RBAC Middleware, Live Invoice Panel, katalog interaktif, dan Prisma ORM dengan MySQL.
               </p>
-              <div class="project-tech-stack">
-                <span class="tech-chip">Next.js 16</span>
-                <span class="tech-chip">React 19</span>
-                <span class="tech-chip">Tailwind CSS</span>
-                <span class="tech-chip">Prisma ORM</span>
-                <span class="tech-chip">MySQL</span>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Next.js 16</span>
+                <span class="tech-tag">React 19</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">Prisma ORM</span>
+                <span class="tech-tag">MySQL</span>
               </div>
-              <button class="btn btn-outline-cyan btn-block" onclick="openProjectModal('food-order')">
-                <i class="fa-solid fa-circle-info"></i> Detail Proyek Complete
+              <button class="btn btn-dark-primary btn-block" onclick="openProjectModal('food-order')">
+                <i class="fa-solid fa-expand"></i> Detail Proyek Complete
               </button>
             </div>
           </article>
 
           <!-- Project Card 2: SPK Band Lokal -->
-          <article class="card project-card">
-            <div class="project-media">
-              <img src="Web/SPK EO/3 Dashboard Admin.png" alt="SPK Pemilihan Band Lokal">
-              <span class="project-tag">SPK (AHP &amp; TOPSIS)</span>
+          <article class="graphical-window project-window">
+            <div class="window-chrome">
+              <div class="window-dots">
+                <span class="dot dot-close"></span>
+                <span class="dot dot-minimize"></span>
+                <span class="dot dot-maximize"></span>
+              </div>
             </div>
-            <div class="project-body">
+
+            <div class="project-media-viewport">
+              <img src="Web/SPK EO/3 Dashboard Admin.png" alt="SPK Pemilihan Band Lokal">
+              <span class="project-badge-tag"><i class="fa-solid fa-diagram-next"></i> AHP &amp; TOPSIS</span>
+            </div>
+
+            <div class="project-body-content">
               <h3 class="project-title">SPK Pemilihan Band Lokal (Spotify API)</h3>
               <p class="project-desc">
-                Sistem Pendukung Keputusan perankingan band lokal menggunakan kombinasi metode AHP dan TOPSIS yang terintegrasi secara otomatis dengan Spotify Web API untuk mengambil data statistik riil.
+                Sistem Pendukung Keputusan perankingan band lokal menggunakan kombinasi metode AHP dan TOPSIS yang terintegrasi secara otomatis dengan Spotify Web API untuk mengolah data riil.
               </p>
-              <div class="project-tech-stack">
-                <span class="tech-chip">Python</span>
-                <span class="tech-chip">Django</span>
-                <span class="tech-chip">MySQL</span>
-                <span class="tech-chip">Spotify Web API</span>
-                <span class="tech-chip">AHP &amp; TOPSIS</span>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Spotify API</span>
+                <span class="tech-tag">AHP &amp; TOPSIS</span>
               </div>
-              <button class="btn btn-outline-cyan btn-block" onclick="openProjectModal('spk-band')">
-                <i class="fa-solid fa-circle-info"></i> Detail Proyek Complete
+              <button class="btn btn-dark-primary btn-block" onclick="openProjectModal('spk-band')">
+                <i class="fa-solid fa-expand"></i> Detail Proyek Complete
               </button>
             </div>
           </article>
 
           <!-- Project Card 3: SPK Siswa Berprestasi -->
-          <article class="card project-card">
-            <div class="project-media">
-              <img src="SPK MOORA/Dashboard.png" alt="SPK Penentuan Siswa Berprestasi">
-              <span class="project-tag">SPK (MOORA Method)</span>
+          <article class="graphical-window project-window">
+            <div class="window-chrome">
+              <div class="window-dots">
+                <span class="dot dot-close"></span>
+                <span class="dot dot-minimize"></span>
+                <span class="dot dot-maximize"></span>
+              </div>
             </div>
-            <div class="project-body">
+
+            <div class="project-media-viewport">
+              <img src="SPK MOORA/Dashboard.png" alt="SPK Penentuan Siswa Berprestasi">
+              <span class="project-badge-tag"><i class="fa-solid fa-chart-pie"></i> MOORA Method</span>
+            </div>
+
+            <div class="project-body-content">
               <h3 class="project-title">SPK Penentuan Siswa Berprestasi</h3>
               <p class="project-desc">
-                Sistem pendukung keputusan perankingan siswa berprestasi berbasis metode MOORA dengan kriteria Benefit dan Cost terperinci untuk menghasilkan penentuan yang transparan dan objektif.
+                Sistem pendukung keputusan perankingan siswa berprestasi berbasis metode MOORA dengan kriteria Benefit dan Cost terperinci untuk menghasilkan keputusan yang transparan.
               </p>
-              <div class="project-tech-stack">
-                <span class="tech-chip">PHP</span>
-                <span class="tech-chip">MySQL</span>
-                <span class="tech-chip">Bootstrap</span>
-                <span class="tech-chip">MOORA Method</span>
+              <div class="project-tech-tags">
+                <span class="tech-tag">PHP Native</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Bootstrap</span>
+                <span class="tech-tag">MOORA Engine</span>
               </div>
-              <button class="btn btn-outline-cyan btn-block" onclick="openProjectModal('spk-siswa')">
-                <i class="fa-solid fa-circle-info"></i> Detail Proyek Complete
+              <button class="btn btn-dark-primary btn-block" onclick="openProjectModal('spk-siswa')">
+                <i class="fa-solid fa-expand"></i> Detail Proyek Complete
               </button>
             </div>
           </article>
@@ -368,61 +464,80 @@
       </div>
     </section>
 
-    <!-- SECTION 5: PENGALAMAN KERJA & MAGANG (2 COLUMNS) -->
+    <!-- SECTION 5: PENGALAMAN KERJA & MAGANG -->
     <section class="section experience-section" id="experience">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">REKAM JEJAK</span>
-          <h2 class="section-title">Pengalaman Kerja &amp; <span class="text-highlight-cyan">Magang</span></h2>
+          <span class="section-tag"><i class="fa-solid fa-timeline"></i> CAREER LOG</span>
+          <h2 class="section-title">Pengalaman Kerja &amp; <span class="text-highlight-brown">Magang</span></h2>
           <p class="section-subtitle">Pengalaman nyata dalam perancangan dan pembuatan aplikasi berbasis web.</p>
         </div>
 
         <div class="experience-grid">
-          <!-- Left Column: Work & Internship Description -->
-          <div class="card experience-card">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-title">Full Stack Developer</h3>
-                <span class="timeline-company">Perancangan Aplikasi Presensi Siswa</span>
+          <!-- Left Column: Timeline Details -->
+          <div class="graphical-window experience-window">
+            <div class="window-chrome">
+              <div class="window-dots">
+                <span class="dot dot-close"></span>
+                <span class="dot dot-minimize"></span>
+                <span class="dot dot-maximize"></span>
               </div>
-              <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Februari – Juli 2025</span>
             </div>
-            
-            <ul class="timeline-details">
-              <li>Mengembangkan fitur autentikasi dan hak akses pengguna untuk role Admin dan Guru.</li>
-              <li>Mengembangkan modul presensi yang memungkinkan guru memilih kelas dan mencatat status kehadiran siswa.</li>
-              <li>Mengembangkan fitur rekapitulasi presensi berdasarkan kelas, mata pelajaran, dan periode waktu.</li>
-              <li>Mengimplementasikan fitur ekspor data presensi otomatis ke file Excel.</li>
-              <li>Mengembangkan dashboard statistik dan antarmuka aplikasi responsif menggunakan Tailwind CSS.</li>
-              <li>Merancang basis data menggunakan MySQL serta pemodelan sistem ERD dan UML.</li>
-              <li>Melakukan pengujian fitur utama (Login, Presensi, Rekapitulasi, Ekspor Data, Logout).</li>
-            </ul>
 
-            <div class="timeline-tech">
-              <strong>Tech Stack:</strong> Python, Django Framework, MySQL, HTML, CSS, JavaScript, Tailwind CSS.
+            <div class="window-content timeline-body">
+              <div class="timeline-header-node">
+                <div>
+                  <h3 class="timeline-title">Full Stack Developer</h3>
+                  <span class="timeline-sub"><i class="fa-solid fa-school"></i> Perancangan Aplikasi Presensi Siswa MTs</span>
+                </div>
+                <span class="timeline-date-chip"><i class="fa-regular fa-calendar"></i> Feb – Jul 2025</span>
+              </div>
+              
+              <ul class="graphical-timeline-list">
+                <li><i class="fa-solid fa-code-commit text-brown"></i> Autentikasi dan hak akses role Admin &amp; Guru Mata Pelajaran.</li>
+                <li><i class="fa-solid fa-code-commit text-brown"></i> Pencatatan status kehadiran siswa per kelas dan mata pelajaran.</li>
+                <li><i class="fa-solid fa-code-commit text-brown"></i> Rekapitulasi presensi berdasarkan kelas dan periode secara otomatis.</li>
+                <li><i class="fa-solid fa-code-commit text-brown"></i> Fitur ekspor data laporan presensi ke file Excel (.xlsx).</li>
+                <li><i class="fa-solid fa-code-commit text-brown"></i> Dashboard statistik dan UI responsif berbasis Tailwind CSS.</li>
+                <li><i class="fa-solid fa-code-commit text-brown"></i> Perancangan basis data MySQL, pemodelan ERD, dan UML.</li>
+                <li><i class="fa-solid fa-code-commit text-brown"></i> Testing modul utama (Login, Presensi, Rekap, Ekspor, Logout).</li>
+              </ul>
+
+              <div class="timeline-tech-pill">
+                <strong><i class="fa-solid fa-cubes"></i> Stack:</strong> Python, Django Framework, MySQL, HTML, CSS, JavaScript, Tailwind CSS.
+              </div>
             </div>
           </div>
 
-          <!-- Right Column: Presensi MTs Project Showcase -->
-          <div class="card project-card experience-project-card">
-            <div class="project-media">
-              <img src="Presensi MTs/Dashboard.png" alt="Sistem Informasi Presensi Siswa MTs">
-              <span class="project-tag">Hasil Proyek Magang</span>
+          <!-- Right Column: Presensi MTs App Window -->
+          <div class="graphical-window project-window experience-project-window">
+            <div class="window-chrome">
+              <div class="window-dots">
+                <span class="dot dot-close"></span>
+                <span class="dot dot-minimize"></span>
+                <span class="dot dot-maximize"></span>
+              </div>
             </div>
-            <div class="project-body">
+
+            <div class="project-media-viewport">
+              <img src="Presensi MTs/Dashboard.png" alt="Sistem Informasi Presensi Siswa MTs">
+              <span class="project-badge-tag"><i class="fa-solid fa-laptop-code"></i> Hasil Magang</span>
+            </div>
+
+            <div class="project-body-content">
               <h3 class="project-title">Sistem Informasi Presensi Siswa MTs</h3>
               <p class="project-desc">
                 Sistem pengelolaan dan pencatatan presensi siswa berbasis web yang dibangun selama masa magang/pengembangan sistem.
               </p>
-              <div class="project-tech-stack">
-                <span class="tech-chip">Python</span>
-                <span class="tech-chip">Django</span>
-                <span class="tech-chip">MySQL</span>
-                <span class="tech-chip">Tailwind CSS</span>
-                <span class="tech-chip">Excel Export</span>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">Excel Export</span>
               </div>
-              <button class="btn btn-outline-cyan btn-block" onclick="openProjectModal('presensi-mts')">
-                <i class="fa-solid fa-circle-info"></i> Detail Proyek Complete
+              <button class="btn btn-dark-primary btn-block" onclick="openProjectModal('presensi-mts')">
+                <i class="fa-solid fa-expand"></i> Detail Proyek Complete
               </button>
             </div>
           </div>
@@ -430,43 +545,53 @@
       </div>
     </section>
 
-    <!-- SECTION 6: SERTIFIKASI & PELATIHAN (4 CARDS) -->
+    <!-- SECTION 6: SERTIFIKASI & PELATIHAN -->
     <section class="section certifications-section" id="certifications">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">KUALIFIKASI AKREDITASI</span>
-          <h2 class="section-title">Sertifikasi &amp; <span class="text-highlight-cyan">Pelatihan</span></h2>
-          <p class="section-subtitle">Daftar sertifikasi kompetensi resmi dan program pelatihan profesional yang telah diselesaikan.</p>
+          <span class="section-tag"><i class="fa-solid fa-shield-check"></i> VERIFIED CREDENTIALS</span>
+          <h2 class="section-title">Sertifikasi &amp; <span class="text-highlight-brown">Kualifikasi</span></h2>
+          <p class="section-subtitle">Akreditasi resmi dan program pelatihan profesional yang telah diselesaikan.</p>
         </div>
 
         <div class="certifications-grid">
           <!-- Cert 1: BNSP -->
-          <div class="card cert-card">
-            <div class="cert-header">
-              <div class="cert-icon-wrapper">
-                <i class="fa-solid fa-award"></i>
+          <div class="graphical-window cert-window">
+            <div class="window-chrome">
+              <div class="window-dots">
+                <span class="dot dot-close"></span>
+                <span class="dot dot-minimize"></span>
+                <span class="dot dot-maximize"></span>
               </div>
-              <span class="chip chip-cyan">Sertifikasi BNSP</span>
             </div>
-            <div class="cert-body">
+            <div class="window-content cert-body">
+              <div class="cert-header-badge">
+                <div class="cert-icon-brown"><i class="fa-solid fa-award"></i></div>
+                <span class="cert-chip-brown"><i class="fa-solid fa-check"></i> Sertifikasi BNSP</span>
+              </div>
               <h3 class="cert-title">Sertifikasi Kompetensi Okupasi Pemrogram</h3>
               <p class="cert-issuer">Badan Nasional Sertifikasi Profesi (BNSP)</p>
               <div class="cert-date"><i class="fa-regular fa-calendar-check"></i> Juli 2026</div>
               <p class="cert-desc">
-                Sertifikasi standar kompetensi nasional untuk kualifikasi profesional Pemrogram Komputer, menguji kemampuan pengembangan perangkat lunak.
+                Sertifikasi standar kompetensi nasional untuk kualifikasi profesional Pemrogram Komputer.
               </p>
             </div>
           </div>
 
-          <!-- Cert 2: Software Engineering -->
-          <div class="card cert-card">
-            <div class="cert-header">
-              <div class="cert-icon-wrapper">
-                <i class="fa-solid fa-laptop-code"></i>
+          <!-- Cert 2: Software Engineering RevoU -->
+          <div class="graphical-window cert-window">
+            <div class="window-chrome">
+              <div class="window-dots">
+                <span class="dot dot-close"></span>
+                <span class="dot dot-minimize"></span>
+                <span class="dot dot-maximize"></span>
               </div>
-              <span class="chip">Pelatihan SE</span>
             </div>
-            <div class="cert-body">
+            <div class="window-content cert-body">
+              <div class="cert-header-badge">
+                <div class="cert-icon-brown"><i class="fa-solid fa-laptop-code"></i></div>
+                <span class="cert-chip"><i class="fa-solid fa-check"></i> Pelatihan SE</span>
+              </div>
               <h3 class="cert-title">Fundamental Course Software Engineering</h3>
               <p class="cert-issuer">RevoU</p>
               <div class="cert-date"><i class="fa-regular fa-calendar-check"></i> September 2024</div>
@@ -477,37 +602,47 @@
           </div>
 
           <!-- Cert 3: Data Analytics RevoU -->
-          <div class="card cert-card">
-            <div class="cert-header">
-              <div class="cert-icon-wrapper">
-                <i class="fa-solid fa-chart-line"></i>
+          <div class="graphical-window cert-window">
+            <div class="window-chrome">
+              <div class="window-dots">
+                <span class="dot dot-close"></span>
+                <span class="dot dot-minimize"></span>
+                <span class="dot dot-maximize"></span>
               </div>
-              <span class="chip">Data &amp; Analytics</span>
             </div>
-            <div class="cert-body">
+            <div class="window-content cert-body">
+              <div class="cert-header-badge">
+                <div class="cert-icon-brown"><i class="fa-solid fa-chart-line"></i></div>
+                <span class="cert-chip"><i class="fa-solid fa-check"></i> Data &amp; Analytics</span>
+              </div>
               <h3 class="cert-title">Intro to Data Analytics</h3>
               <p class="cert-issuer">RevoU</p>
               <div class="cert-date"><i class="fa-regular fa-calendar-check"></i> November 2024</div>
               <p class="cert-desc">
-                Pelatihan dasar analisis data, pemrosesan data statistik, visualisasi data, dan penarikan wawasan berbasis data.
+                Pelatihan dasar analisis data, pemrosesan statistik, visualisasi data, dan penarikan wawasan.
               </p>
             </div>
           </div>
 
           <!-- Cert 4: TOEFL Test -->
-          <div class="card cert-card">
-            <div class="cert-header">
-              <div class="cert-icon-wrapper">
-                <i class="fa-solid fa-language"></i>
+          <div class="graphical-window cert-window">
+            <div class="window-chrome">
+              <div class="window-dots">
+                <span class="dot dot-close"></span>
+                <span class="dot dot-minimize"></span>
+                <span class="dot dot-maximize"></span>
               </div>
-              <span class="chip">Sertifikasi Bahasa</span>
             </div>
-            <div class="cert-body">
+            <div class="window-content cert-body">
+              <div class="cert-header-badge">
+                <div class="cert-icon-brown"><i class="fa-solid fa-language"></i></div>
+                <span class="cert-chip"><i class="fa-solid fa-check"></i> Sertifikasi Bahasa</span>
+              </div>
               <h3 class="cert-title">Tes Kemahiran Bahasa Inggris (TOEFL)</h3>
               <p class="cert-issuer">Lembaga Bahasa UNPAM</p>
               <div class="cert-date"><i class="fa-regular fa-calendar-check"></i> November 2025</div>
               <p class="cert-desc">
-                Sertifikasi tes kecakapan dan kemahiran komunikasi berbahasa Inggris oleh Lembaga Bahasa Universitas Pamulang.
+                Sertifikasi tes kecakapan dan kemahiran komunikasi berbahasa Inggris oleh Lembaga Bahasa UNPAM.
               </p>
             </div>
           </div>
@@ -518,26 +653,34 @@
     <!-- SECTION 7: KONTAK -->
     <section class="section contact-section" id="contact">
       <div class="container">
-        <div class="card contact-main-card">
-          <div class="contact-grid">
+        <div class="graphical-window contact-window">
+          <div class="window-chrome">
+            <div class="window-dots">
+              <span class="dot dot-close"></span>
+              <span class="dot dot-minimize"></span>
+              <span class="dot dot-maximize"></span>
+            </div>
+          </div>
+
+          <div class="window-content contact-grid">
             <div class="contact-info">
-              <span class="section-tag">HUBUNGI SAYA</span>
-              <h2 class="contact-title">Get in Touch <span class="text-highlight-cyan">Today!</span></h2>
+              <span class="section-tag"><i class="fa-solid fa-headset"></i> HUBUNGI SAYA</span>
+              <h2 class="contact-title">Get in Touch <span class="text-highlight-brown">Today!</span></h2>
               <p class="contact-text">
-                Saya selalu terbuka untuk kesempatan karir, proyek pembuatan website, maupun diskusi seputar pengembangan sistem informasi.
+                Terbuka untuk kesempatan karir Full Stack Developer, proyek pembuatan website, maupun diskusi sistem informasi.
               </p>
 
               <div class="contact-details-list">
-                <a href="https://wa.me/6281289842670" target="_blank" class="contact-item">
-                  <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <a href="https://wa.me/6281289842670" target="_blank" class="graphical-contact-item">
+                  <div class="contact-icon-green"><i class="fa-brands fa-whatsapp"></i></div>
                   <div>
                     <span>Telepon / WhatsApp</span>
                     <strong>0812-8984-2670</strong>
                   </div>
                 </a>
 
-                <div class="contact-item" id="emailCopyContainer" style="cursor: pointer;">
-                  <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
+                <div class="graphical-contact-item" id="emailCopyContainer" style="cursor: pointer;">
+                  <div class="contact-icon-brown"><i class="fa-regular fa-envelope"></i></div>
                   <div>
                     <span>Email</span>
                     <strong id="contactEmailText">fahmimal99@gmail.com</strong>
@@ -547,18 +690,18 @@
                   </button>
                 </div>
 
-                <a href="https://github.com/Fahmizzy" target="_blank" class="contact-item">
-                  <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                <a href="https://github.com/Fahmizzy" target="_blank" class="graphical-contact-item">
+                  <div class="contact-icon-dark"><i class="fa-brands fa-github"></i></div>
                   <div>
-                    <span>GitHub</span>
+                    <span>GitHub Profile</span>
                     <strong>github.com/Fahmizzy</strong>
                   </div>
                 </a>
 
-                <a href="https://linkedin.com/in/muhammad-fahmi-alfarizi" target="_blank" class="contact-item">
-                  <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                <a href="https://linkedin.com/in/muhammad-fahmi-alfarizi" target="_blank" class="graphical-contact-item">
+                  <div class="contact-icon-blue"><i class="fa-brands fa-linkedin-in"></i></div>
                   <div>
-                    <span>LinkedIn</span>
+                    <span>LinkedIn Network</span>
                     <strong>linkedin.com/in/muhammad-fahmi-alfarizi</strong>
                   </div>
                 </a>
@@ -566,15 +709,17 @@
             </div>
 
             <div class="contact-card-side">
-              <div class="profile-card">
-                <img src="DSC_6648_4x6.jpg.jpeg" alt="Muhammad Fahmi Alfarizi" class="profile-thumb">
+              <div class="graphical-passcard">
+                <div class="passcard-avatar-wrapper">
+                  <img src="hero-foto.png" alt="Muhammad Fahmi Alfarizi" class="passcard-thumb">
+                </div>
                 <h3>Muhammad Fahmi Alfarizi</h3>
                 <p>Mahasiswa Teknik Informatika · Full Stack Developer</p>
-                <div class="profile-actions">
-                  <a href="https://wa.me/6281289842670" target="_blank" class="btn btn-cyan-primary btn-block">
-                    <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp
+                <div class="passcard-actions">
+                  <a href="https://wa.me/6281289842670" target="_blank" class="btn btn-dark-primary btn-block">
+                    <i class="fa-brands fa-whatsapp"></i> Direct WhatsApp
                   </a>
-                  <button type="button" class="btn btn-light-outline btn-block" id="downloadCvContactBtn">
+                  <button type="button" class="btn btn-creatix-outline btn-block" id="downloadCvContactBtn">
                     <i class="fa-solid fa-download"></i> Unduh Ringkasan CV
                   </button>
                 </div>
@@ -586,10 +731,10 @@
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Graphical Footer -->
   <footer class="footer">
     <div class="container footer-container">
-      <p>&copy; <span id="year">2026</span> Muhammad Fahmi Alfarizi. All rights reserved.</p>
+      <p>&copy; <span id="year">2026</span> Muhammad Fahmi Alfarizi - Portofolio.</p>
       <a href="#hero" class="back-to-top"><i class="fa-solid fa-arrow-up"></i> Kembali ke Atas</a>
     </div>
   </footer>
@@ -606,7 +751,7 @@
         <!-- Injected via JavaScript -->
       </div>
       <div class="modal-footer">
-        <button class="btn btn-cyan-primary" onclick="closeProjectModal()">Tutup</button>
+        <button class="btn btn-dark-primary" onclick="closeProjectModal()">Tutup</button>
       </div>
     </div>
   </div>

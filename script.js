@@ -6,7 +6,33 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavbar();
   initCopyEmail();
   initCvDownload();
+  initScrollReveal();
 });
+
+// --------------------------------------------------------------------------
+// SCROLL REVEAL ANIMATION CONTROLLER
+// --------------------------------------------------------------------------
+function initScrollReveal() {
+  const revealElements = document.querySelectorAll('.reveal-on-scroll');
+  if (!revealElements.length) return;
+
+  const observerOptions = {
+    root: null,
+    threshold: 0.12,
+    rootMargin: '0px 0px -40px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  revealElements.forEach(el => observer.observe(el));
+}
 
 // --------------------------------------------------------------------------
 // 1. PROJECT DATA FROM CV
