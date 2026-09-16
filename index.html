@@ -4,9 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Muhammad Fahmi Alfarizi — Portfolio</title>
+  <title>Muhammad Fahmi Alfarizi — Full Stack Web Developer</title>
   <meta name="description"
     content="Portofolio Muhammad Fahmi Alfarizi - Mahasiswa Teknik Informatika Universitas Pamulang & Full Stack Web Developer.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Muhammad Fahmi Alfarizi — Full Stack Web Developer">
+  <meta property="og:description" content="Portofolio Muhammad Fahmi Alfarizi, Mahasiswa Teknik Informatika Universitas Pamulang & Full Stack Web Developer.">
+  <meta property="og:image" content="hero-foto.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Muhammad Fahmi Alfarizi — Full Stack Web Developer">
+  <meta name="twitter:description" content="Portofolio Muhammad Fahmi Alfarizi, Mahasiswa Teknik Informatika Universitas Pamulang & Full Stack Web Developer.">
+  <meta name="twitter:image" content="hero-foto.png">
 
   <!-- Google Fonts: Inter, Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,7 +89,7 @@
       <div class="container hero-creatix-container">
         
         <!-- Top Title Header -->
-        <div class="creatix-hero-header">
+        <div class="creatix-hero-header hero-animate-title">
           <h1 class="creatix-hero-title">
             Membangun Solusi Digital <br>
             Melalui <span class="text-highlight-dark">Kode Kreatif</span>
@@ -86,7 +99,7 @@
         <!-- 3-Column Hero Grid: Left Bio, Center Cutout Portrait (hero-foto.png), Right Badges -->
         <div class="creatix-hero-body">
           <!-- Left Column -->
-          <div class="creatix-col-left">
+          <div class="creatix-col-left hero-animate-left">
             <p class="creatix-hero-desc">
               Halo, Saya <strong>Muhammad Fahmi Alfarizi</strong> — Full Stack Web Developer yang berfokus pada pembangunan sistem informasi, aplikasi web modern, dan sistem pendukung keputusan yang cepat, terstruktur, serta berorientasi pada kebutuhan pengguna.
             </p>
@@ -99,13 +112,13 @@
           </div>
 
           <!-- Center Column: Portrait hero-foto.png (Clean, Standalone) -->
-          <div class="creatix-col-center">
+          <div class="creatix-col-center hero-animate-photo">
             <div class="creatix-circle-backdrop"></div>
             <img src="hero-foto.png" alt="Muhammad Fahmi Alfarizi - Hero Cutout" class="batik-hero-cutout">
           </div>
 
           <!-- Right Column -->
-          <div class="creatix-col-right">
+          <div class="creatix-col-right hero-animate-right">
             <div class="creatix-rating-card">
               <div class="academic-badge-icon">
                 <i class="fa-solid fa-graduation-cap"></i>
@@ -150,7 +163,7 @@
       </div>
     </section>
 
-    <!-- CONTINUOUS TICKER BANNER -->
+    <!-- CONTINUOUS TICKER BANNER (Metrics bar kept below hero) -->
     <div class="marquee-banner">
       <div class="marquee-content">
         <span class="marquee-item"><i class="fa-solid fa-microchip"></i> FULL STACK DEVELOPER</span>
@@ -171,7 +184,7 @@
     <!-- SECTION 2: TENTANG SAYA -->
     <section class="section about-section" id="about">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header reveal-on-scroll">
           <span class="section-tag"><i class="fa-solid fa-sliders"></i> PROFIL &amp; LATAR BELAKANG</span>
           <h2 class="section-title">Tentang <span class="text-highlight-brown">Saya</span></h2>
           <p class="section-subtitle">
@@ -211,21 +224,22 @@
           <!-- Right Column: Side Info Stack -->
           <div class="about-side-stack">
             <!-- Education Box -->
-            <div class="graphical-info-box">
+            <div class="graphical-info-box reveal-on-scroll">
               <div class="box-icon"><i class="fa-solid fa-graduation-cap"></i></div>
               <div class="box-details">
                 <h4>Pendidikan Akademik</h4>
                 <strong>Universitas Pamulang</strong>
-                <p>S1 Teknik Informatika (2022 – 2026)</p>
-                <div class="graphical-progress-pill">
+                <p>S1 Teknik Informatika · Angkatan 2022</p>
+                <p style="font-size:0.8rem;color:#64748b;margin-top:0.2rem;">Target Lulus: 2026 · ±130 SKS Ditempuh</p>
+                <div class="graphical-progress-pill" style="margin-top:0.5rem;">
                   <div class="progress-fill" style="width: 86.75%;"></div>
-                  <span><i class="fa-solid fa-star"></i> IPK: 3.47 / 4.00</span>
+                  <span><i class="fa-solid fa-graduation-cap"></i> Matkul Unggulan: Web Dev, Rekayasa Perangkat Lunak & SPK</span>
                 </div>
               </div>
             </div>
 
             <!-- Certs Overview Box -->
-            <div class="graphical-info-box">
+            <div class="graphical-info-box reveal-on-scroll">
               <div class="box-icon-brown"><i class="fa-solid fa-award"></i></div>
               <div class="box-details">
                 <h4>Kualifikasi Utama</h4>
@@ -239,7 +253,7 @@
             </div>
 
             <!-- Soft Skills Box -->
-            <div class="graphical-info-box">
+            <div class="graphical-info-box reveal-on-scroll">
               <div class="box-icon"><i class="fa-solid fa-brain"></i></div>
               <div class="box-details">
                 <h4>Soft Skills &amp; Working Style</h4>
@@ -260,7 +274,7 @@
     <!-- SECTION 3: KEAHLIAN TEKNIS -->
     <section class="section skills-section" id="skills">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header reveal-on-scroll">
           <span class="section-tag"><i class="fa-solid fa-cpu"></i> TECH MATRIX</span>
           <h2 class="section-title">Keahlian <span class="text-highlight-brown">Teknis &amp; Node Stack</span></h2>
           <p class="section-subtitle">Ekosistem teknologi dan perangkat yang terbiasa digunakan dalam pengembangan perangkat lunak.</p>
@@ -268,7 +282,7 @@
 
         <div class="skills-categories-grid">
           <!-- Category 1: Languages -->
-          <div class="graphical-window skill-window">
+          <div class="graphical-window skill-window reveal-on-scroll">
             <div class="window-chrome">
               <div class="window-dots">
                 <span class="dot dot-close"></span>
@@ -289,7 +303,7 @@
           </div>
 
           <!-- Category 2: Frameworks & Libraries -->
-          <div class="graphical-window skill-window">
+          <div class="graphical-window skill-window reveal-on-scroll">
             <div class="window-chrome">
               <div class="window-dots">
                 <span class="dot dot-close"></span>
@@ -311,7 +325,7 @@
           </div>
 
           <!-- Category 3: Database & Tools -->
-          <div class="graphical-window skill-window">
+          <div class="graphical-window skill-window reveal-on-scroll">
             <div class="window-chrome">
               <div class="window-dots">
                 <span class="dot dot-close"></span>
@@ -337,7 +351,7 @@
     <!-- SECTION 4: PROYEK UNGGULAN -->
     <section class="section projects-section" id="projects">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header reveal-on-scroll">
           <span class="section-tag"><i class="fa-solid fa-window-restore"></i> APP SHOWCASE</span>
           <h2 class="section-title">Proyek <span class="text-highlight-brown">Unggulan</span></h2>
           <p class="section-subtitle">
@@ -347,7 +361,7 @@
 
         <div class="projects-grid">
           <!-- Project Card 1: Food Order -->
-          <article class="graphical-window project-window">
+          <article class="graphical-window project-window reveal-on-scroll">
             <div class="window-chrome">
               <div class="window-dots">
                 <span class="dot dot-close"></span>
@@ -357,7 +371,7 @@
             </div>
             
             <div class="project-media-viewport">
-              <img src="Food Order/Dashboard.png" alt="Sistem Pemesanan Makanan Berbasis Web">
+              <img src="Food Order/Dashboard.png" alt="Sistem Pemesanan Makanan Berbasis Web" loading="lazy" width="1360" height="768">
               <span class="project-badge-tag"><i class="fa-solid fa-bolt"></i> Full Stack App</span>
             </div>
 
@@ -373,14 +387,19 @@
                 <span class="tech-tag">Prisma ORM</span>
                 <span class="tech-tag">MySQL</span>
               </div>
-              <button class="btn btn-dark-primary btn-block" onclick="openProjectModal('food-order')">
-                <i class="fa-solid fa-expand"></i> Detail Proyek Complete
-              </button>
+              <div style="display:flex;gap:0.6rem;flex-wrap:wrap;">
+                <button class="btn btn-dark-primary" style="flex:1;" onclick="openProjectModal('food-order')">
+                  <i class="fa-solid fa-expand"></i> Detail Proyek
+                </button>
+                <a href="https://github.com/Fahmizzy/foodorder-next" target="_blank" class="btn btn-creatix-outline" style="flex:1;text-align:center;">
+                  <i class="fa-brands fa-github"></i> Lihat Kode
+                </a>
+              </div>
             </div>
           </article>
 
           <!-- Project Card 2: SPK Band Lokal -->
-          <article class="graphical-window project-window">
+          <article class="graphical-window project-window reveal-on-scroll">
             <div class="window-chrome">
               <div class="window-dots">
                 <span class="dot dot-close"></span>
@@ -390,7 +409,7 @@
             </div>
 
             <div class="project-media-viewport">
-              <img src="Web/SPK EO/3 Dashboard Admin.png" alt="SPK Pemilihan Band Lokal">
+              <img src="Web/SPK EO/3 Dashboard Admin.png" alt="SPK Pemilihan Band Lokal" loading="lazy" width="1360" height="768">
               <span class="project-badge-tag"><i class="fa-solid fa-diagram-next"></i> AHP &amp; TOPSIS</span>
             </div>
 
@@ -406,14 +425,19 @@
                 <span class="tech-tag">Spotify API</span>
                 <span class="tech-tag">AHP &amp; TOPSIS</span>
               </div>
-              <button class="btn btn-dark-primary btn-block" onclick="openProjectModal('spk-band')">
-                <i class="fa-solid fa-expand"></i> Detail Proyek Complete
-              </button>
+              <div style="display:flex;gap:0.6rem;flex-wrap:wrap;">
+                <button class="btn btn-dark-primary" style="flex:1;" onclick="openProjectModal('spk-band')">
+                  <i class="fa-solid fa-expand"></i> Detail Proyek
+                </button>
+                <a href="https://github.com/Fahmizzy/SPK-Pemilihan-Band-Lokal-" target="_blank" class="btn btn-creatix-outline" style="flex:1;text-align:center;">
+                  <i class="fa-brands fa-github"></i> Lihat Kode
+                </a>
+              </div>
             </div>
           </article>
 
           <!-- Project Card 3: SPK Siswa Berprestasi -->
-          <article class="graphical-window project-window">
+          <article class="graphical-window project-window reveal-on-scroll">
             <div class="window-chrome">
               <div class="window-dots">
                 <span class="dot dot-close"></span>
@@ -423,7 +447,7 @@
             </div>
 
             <div class="project-media-viewport">
-              <img src="SPK MOORA/Dashboard.png" alt="SPK Penentuan Siswa Berprestasi">
+              <img src="SPK MOORA/Dashboard.png" alt="SPK Penentuan Siswa Berprestasi" loading="lazy" width="1360" height="768">
               <span class="project-badge-tag"><i class="fa-solid fa-chart-pie"></i> MOORA Method</span>
             </div>
 
@@ -438,9 +462,14 @@
                 <span class="tech-tag">Bootstrap</span>
                 <span class="tech-tag">MOORA Engine</span>
               </div>
-              <button class="btn btn-dark-primary btn-block" onclick="openProjectModal('spk-siswa')">
-                <i class="fa-solid fa-expand"></i> Detail Proyek Complete
-              </button>
+              <div style="display:flex;gap:0.6rem;flex-wrap:wrap;">
+                <button class="btn btn-dark-primary" style="flex:1;" onclick="openProjectModal('spk-siswa')">
+                  <i class="fa-solid fa-expand"></i> Detail Proyek
+                </button>
+                <a href="https://github.com/Fahmizzy/spk-moora" target="_blank" class="btn btn-creatix-outline" style="flex:1;text-align:center;">
+                  <i class="fa-brands fa-github"></i> Lihat Kode
+                </a>
+              </div>
             </div>
           </article>
         </div>
@@ -450,7 +479,7 @@
     <!-- SECTION 5: PENGALAMAN KERJA & MAGANG -->
     <section class="section experience-section" id="experience">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header reveal-on-scroll">
           <span class="section-tag"><i class="fa-solid fa-timeline"></i> CAREER LOG</span>
           <h2 class="section-title">Pengalaman Kerja &amp; <span class="text-highlight-brown">Magang</span></h2>
           <p class="section-subtitle">Pengalaman nyata dalam perancangan dan pembuatan aplikasi berbasis web.</p>
@@ -458,7 +487,7 @@
 
         <div class="experience-grid">
           <!-- Left Column: Timeline Details -->
-          <div class="graphical-window experience-window">
+          <div class="graphical-window experience-window reveal-on-scroll">
             <div class="window-chrome">
               <div class="window-dots">
                 <span class="dot dot-close"></span>
@@ -493,7 +522,7 @@
           </div>
 
           <!-- Right Column: Presensi MTs App Window -->
-          <div class="graphical-window project-window experience-project-window">
+          <div class="graphical-window project-window experience-project-window reveal-on-scroll">
             <div class="window-chrome">
               <div class="window-dots">
                 <span class="dot dot-close"></span>
@@ -503,7 +532,7 @@
             </div>
 
             <div class="project-media-viewport">
-              <img src="Presensi MTs/Dashboard.png" alt="Sistem Informasi Presensi Siswa MTs">
+              <img src="Presensi MTs/Dashboard.png" alt="Sistem Informasi Presensi Siswa MTs" loading="lazy" width="1360" height="768">
               <span class="project-badge-tag"><i class="fa-solid fa-laptop-code"></i> Hasil Magang</span>
             </div>
 
@@ -519,9 +548,14 @@
                 <span class="tech-tag">Tailwind CSS</span>
                 <span class="tech-tag">Excel Export</span>
               </div>
-              <button class="btn btn-dark-primary btn-block" onclick="openProjectModal('presensi-mts')">
-                <i class="fa-solid fa-expand"></i> Detail Proyek Complete
-              </button>
+              <div style="display:flex;gap:0.6rem;flex-wrap:wrap;">
+                <button class="btn btn-dark-primary" style="flex:1;" onclick="openProjectModal('presensi-mts')">
+                  <i class="fa-solid fa-expand"></i> Detail Proyek
+                </button>
+                <a href="https://github.com/Fahmizzy/Presensi-Mts-Peradaban-Insani" target="_blank" class="btn btn-creatix-outline" style="flex:1;text-align:center;">
+                  <i class="fa-brands fa-github"></i> Lihat Kode
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -531,7 +565,7 @@
     <!-- SECTION 6: SERTIFIKASI & PELATIHAN -->
     <section class="section certifications-section" id="certifications">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header reveal-on-scroll">
           <span class="section-tag"><i class="fa-solid fa-shield-check"></i> VERIFIED CREDENTIALS</span>
           <h2 class="section-title">Sertifikasi &amp; <span class="text-highlight-brown">Kualifikasi</span></h2>
           <p class="section-subtitle">Akreditasi resmi dan program pelatihan profesional yang telah diselesaikan.</p>
@@ -539,7 +573,7 @@
 
         <div class="certifications-grid">
           <!-- Cert 1: BNSP -->
-          <div class="graphical-window cert-window">
+          <div class="graphical-window cert-window reveal-on-scroll">
             <div class="window-chrome">
               <div class="window-dots">
                 <span class="dot dot-close"></span>
@@ -562,7 +596,7 @@
           </div>
 
           <!-- Cert 2: Software Engineering RevoU -->
-          <div class="graphical-window cert-window">
+          <div class="graphical-window cert-window reveal-on-scroll">
             <div class="window-chrome">
               <div class="window-dots">
                 <span class="dot dot-close"></span>
@@ -585,7 +619,7 @@
           </div>
 
           <!-- Cert 3: Data Analytics RevoU -->
-          <div class="graphical-window cert-window">
+          <div class="graphical-window cert-window reveal-on-scroll">
             <div class="window-chrome">
               <div class="window-dots">
                 <span class="dot dot-close"></span>
@@ -608,7 +642,7 @@
           </div>
 
           <!-- Cert 4: TOEFL Test -->
-          <div class="graphical-window cert-window">
+          <div class="graphical-window cert-window reveal-on-scroll">
             <div class="window-chrome">
               <div class="window-dots">
                 <span class="dot dot-close"></span>
@@ -636,7 +670,7 @@
     <!-- SECTION 7: KONTAK -->
     <section class="section contact-section" id="contact">
       <div class="container">
-        <div class="graphical-window contact-window">
+        <div class="graphical-window contact-window reveal-on-scroll">
           <div class="window-chrome">
             <div class="window-dots">
               <span class="dot dot-close"></span>
