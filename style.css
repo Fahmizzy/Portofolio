@@ -1498,8 +1498,26 @@ ul {
 /* ==========================================================================
    RESPONSIVE MEDIA QUERIES
    ========================================================================== */
+
+/* --- TABLET (max 1024px) --- */
 @media (max-width: 1024px) {
-  .creatix-hero-body, .about-grid, .experience-grid, .contact-grid {
+  /* Hero: stack menjadi 1 kolom - foto di tengah */
+  .creatix-hero-body {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Atur urutan: judul → deskripsi/CTA → foto → kartu kanan */
+  .creatix-col-left  { order: 1; text-align: center; align-items: center; }
+  .creatix-col-center { order: 2; }
+  .creatix-col-right { order: 3; flex-direction: row; gap: 1rem; }
+
+  .creatix-left-actions { justify-content: center; }
+  .creatix-col-right .creatix-rating-card,
+  .creatix-col-right .creatix-role-badge { flex: 1; }
+
+  /* Grids */
+  .about-grid, .experience-grid, .contact-grid {
     grid-template-columns: 1fr;
   }
   .projects-grid, .skills-categories-grid {
@@ -1508,10 +1526,19 @@ ul {
   .certifications-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* Hero metrics bar jadi grid di tablet */
+  .hero-metrics-bar {
+    gap: 1rem;
+  }
 }
 
+/* --- MOBILE (max 768px) --- */
 @media (max-width: 768px) {
+  /* Hide top system bar */
   .system-hud-bar { display: none; }
+
+  /* Navbar full width */
   .creatix-navbar {
     border-radius: 0;
     top: 0;
@@ -1521,18 +1548,120 @@ ul {
     display: none;
   }
   .nav-toggle { display: block; }
+
+  /* Hero section spacing */
+  .hero-section { padding-top: 1rem; }
+
+  /* Hero kolom: 1 kolom, reset semua order */
+  .creatix-hero-body {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    align-items: stretch;
+  }
+  .creatix-col-left  { order: 1; text-align: center; align-items: center; }
+  .creatix-col-center { order: 2; min-height: 300px; }
+  .creatix-col-right { order: 3; flex-direction: column; }
+
+  /* Hero title ukuran lebih kecil di mobile */
+  .creatix-hero-title {
+    font-size: clamp(1.8rem, 7vw, 2.6rem);
+    letter-spacing: -0.5px;
+  }
+
+  /* Foto hero ukuran mobile */
+  .batik-hero-cutout {
+    height: 290px;
+  }
+
+  /* Backdrop circle sesuai foto */
+  .creatix-circle-backdrop {
+    width: 240px;
+    height: 240px;
+  }
+
+  /* Hero metrics bar */
+  .hero-metrics-bar {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+  .metric-divider { display: none; }
+
+  /* Grid jadi 1 kolom di mobile */
   .projects-grid, .skills-categories-grid, .certifications-grid {
     grid-template-columns: 1fr;
   }
-  .hero-metrics-bar {
-    flex-direction: column;
+
+  /* About section */
+  .about-grid { grid-template-columns: 1fr; }
+  .about-side-stack { gap: 0.75rem; }
+
+  /* Contact section */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
     gap: 1rem;
   }
-  .metric-divider {
-    display: none;
+
+  /* Passcard di mobile - tidak perlu terlalu tinggi */
+  .graphical-passcard {
+    padding: 1rem;
   }
-  .batik-hero-cutout {
-    height: 320px;
-    margin-top: -240px;
+
+  /* Passcard avatar: tampilkan crop kepala/bahu atas */
+  .passcard-thumb {
+    object-position: top center;
+  }
+
+  /* Section title lebih kecil */
+  .section-title {
+    font-size: clamp(1.5rem, 5vw, 1.9rem);
+  }
+
+  /* Contact info items */
+  .graphical-contact-item strong {
+    font-size: 0.8rem;
+    word-break: break-all;
+  }
+
+  /* Experience grid */
+  .experience-grid { grid-template-columns: 1fr; }
+
+  /* Marquee banner - lebih lambat di mobile supaya terbaca */
+  .marquee-content {
+    animation-duration: 35s;
+  }
+}
+
+/* --- SMALL MOBILE (max 480px) --- */
+@media (max-width: 480px) {
+  .container { padding: 0 1rem; }
+
+  .creatix-hero-title {
+    font-size: clamp(1.6rem, 6vw, 2.2rem);
+  }
+
+  .batik-hero-cutout { height: 250px; }
+  .creatix-circle-backdrop { width: 200px; height: 200px; }
+
+  .creatix-left-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn-creatix-outline, .btn-creatix-ghost {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* Passcard di layar sangat kecil */
+  .passcard-avatar-wrapper {
+    width: 70px;
+    height: 70px;
+  }
+
+  /* Project/cert grid: tetap 1 kolom */
+  .projects-grid, .skills-categories-grid, .certifications-grid {
+    grid-template-columns: 1fr;
   }
 }
