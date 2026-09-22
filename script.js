@@ -46,16 +46,16 @@ const projectData = {
     title: 'Sistem Pemesanan Makanan Berbasis Web',
     techStack: ['Next.js 16 (App Router)', 'React 19', 'Tailwind CSS v4', 'Shadcn UI', 'Prisma ORM', 'MySQL', 'JWT Auth', 'RBAC Middleware'],
     images: [
-      { src: 'Food Order/Dashboard.png', title: 'Dashboard Utama & Katalog Makanan' },
-      { src: 'Food Order/Menu.png', title: 'Tampilan Katalog Menu Interaktif' },
-      { src: 'Food Order/Cart.png', title: 'Keranjang Belanja (Live Invoice Panel)' },
-      { src: 'Food Order/Checkout.png', title: 'Proses Checkout & Transaksi' },
-      { src: 'Food Order/Order Success.png', title: 'Konfirmasi Pesanan Berhasil' },
-      { src: 'Food Order/Recent.png', title: 'Riwayat & Status Pesanan Realtime' },
-      { src: 'Food Order/Login.png', title: 'Halaman Login & Autentikasi User' },
-      { src: 'Food Order/Admin Dashboard.png', title: 'Dashboard Pengelolaan Admin' },
-      { src: 'Food Order/Admin Menu.png', title: 'Manajemen Data Menu Makanan (CRUD)' },
-      { src: 'Food Order/Admin Payment.png', title: 'Konfirmasi & Status Pembayaran' }
+      { src: 'Food Order/Dashboard.webp', title: 'Dashboard Utama & Katalog Makanan' },
+      { src: 'Food Order/Menu.webp', title: 'Tampilan Katalog Menu Interaktif' },
+      { src: 'Food Order/Cart.webp', title: 'Keranjang Belanja (Live Invoice Panel)' },
+      { src: 'Food Order/Checkout.webp', title: 'Proses Checkout & Transaksi' },
+      { src: 'Food Order/Order Success.webp', title: 'Konfirmasi Pesanan Berhasil' },
+      { src: 'Food Order/Recent.webp', title: 'Riwayat & Status Pesanan Realtime' },
+      { src: 'Food Order/Login.webp', title: 'Halaman Login & Autentikasi User' },
+      { src: 'Food Order/Admin Dashboard.webp', title: 'Dashboard Pengelolaan Admin' },
+      { src: 'Food Order/Admin Menu.webp', title: 'Manajemen Data Menu Makanan (CRUD)' },
+      { src: 'Food Order/Admin Payment.webp', title: 'Konfirmasi & Status Pembayaran' }
     ],
     description: `
       <p>Sistem aplikasi pemesanan makanan berbasis web modern yang dirancang untuk memberikan pengalaman transaksi yang cepat, intuitif, dan responsif bagi pelanggan maupun administrator resto.</p>
@@ -76,16 +76,16 @@ const projectData = {
     title: 'Sistem Pendukung Keputusan Pemilihan Band Lokal',
     techStack: ['Python', 'Django Framework', 'MySQL', 'HTML5', 'CSS3', 'JavaScript', 'Tailwind CSS', 'Spotify Web API'],
     images: [
-      { src: 'Web/SPK EO/3 Dashboard Admin.png', title: 'Dashboard Utama Administrator' },
-      { src: 'Web/SPK EO/8 Dashboard User.png', title: 'Dashboard Antarmuka Pengguna' },
-      { src: 'Web/SPK EO/1 - Login.png', title: 'Halaman Login Akun Pengguna' },
-      { src: 'Web/SPK EO/2 - Registrasi.png', title: 'Halaman Pendaftaran Akun Baru' },
-      { src: 'Web/SPK EO/4 Data Band Admin.png', title: 'Kelola Data Band & Integrasi Spotify API' },
-      { src: 'Web/SPK EO/5 Kriteria Admin.png', title: 'Pengaturan Kriteria Penilaian AHP' },
-      { src: 'Web/SPK EO/6 Perbandingan Admin.png', title: 'Matriks Perbandingan Berpasangan AHP' },
-      { src: 'Web/SPK EO/7 Rekomendasi Admin.png', title: 'Hasil Perankingan Metode TOPSIS (Admin)' },
-      { src: 'Web/SPK EO/9 Data Band User.png', title: 'Katalog Data Band Lokal (User)' },
-      { src: 'Web/SPK EO/10 Rekomendasi Admin.png', title: 'Laporan Rekomendasi Band Terbaik' }
+      { src: 'Web/SPK EO/3 Dashboard Admin.webp', title: 'Dashboard Utama Administrator' },
+      { src: 'Web/SPK EO/8 Dashboard User.webp', title: 'Dashboard Antarmuka Pengguna' },
+      { src: 'Web/SPK EO/1 - Login.webp', title: 'Halaman Login Akun Pengguna' },
+      { src: 'Web/SPK EO/2 - Registrasi.webp', title: 'Halaman Pendaftaran Akun Baru' },
+      { src: 'Web/SPK EO/4 Data Band Admin.webp', title: 'Kelola Data Band & Integrasi Spotify API' },
+      { src: 'Web/SPK EO/5 Kriteria Admin.webp', title: 'Pengaturan Kriteria Penilaian AHP' },
+      { src: 'Web/SPK EO/6 Perbandingan Admin.webp', title: 'Matriks Perbandingan Berpasangan AHP' },
+      { src: 'Web/SPK EO/7 Rekomendasi Admin.webp', title: 'Hasil Perankingan Metode TOPSIS (Admin)' },
+      { src: 'Web/SPK EO/9 Data Band User.webp', title: 'Katalog Data Band Lokal (User)' },
+      { src: 'Web/SPK EO/10 Rekomendasi Admin.webp', title: 'Laporan Rekomendasi Band Terbaik' }
     ],
     description: `
       <p>Sistem pengambil keputusan cerdas untuk menentukan perankingan band lokal secara objektif berbasis kombinasi metode AHP (Analytical Hierarchy Process) dan TOPSIS (Technique for Order Preference by Similarity to Ideal Solution) terintegrasi dengan Spotify Web API.</p>
@@ -103,14 +103,14 @@ const projectData = {
     title: 'Sistem Pendukung Keputusan Penentuan Siswa Berprestasi',
     techStack: ['PHP', 'MySQL', 'HTML5', 'CSS3', 'JavaScript', 'Bootstrap'],
     images: [
-      { src: 'SPK MOORA/Dashboard.png', title: 'Dashboard Ringkasan Sistem MOORA' },
-      { src: 'SPK MOORA/Login.png', title: 'Halaman Autentikasi Login' },
-      { src: 'SPK MOORA/Data siswa.png', title: 'Manajemen Master Data Siswa' },
-      { src: 'SPK MOORA/Data Kriteria.png', title: 'Kelola Kriteria & Bobot Assessment' },
-      { src: 'SPK MOORA/Data Nilai.png', title: 'Input & Pemrosesan Data Nilai Siswa' },
-      { src: 'SPK MOORA/MOORA.png', title: 'Matriks Decision & Calculation MOORA' },
-      { src: 'SPK MOORA/Hasil MOORA.png', title: 'Hasil Perankingan Siswa Berprestasi' },
-      { src: 'SPK MOORA/Kelola User.png', title: 'Manajemen Pengguna & Role Access' }
+      { src: 'SPK MOORA/Dashboard.webp', title: 'Dashboard Ringkasan Sistem MOORA' },
+      { src: 'SPK MOORA/Login.webp', title: 'Halaman Autentikasi Login' },
+      { src: 'SPK MOORA/Data siswa.webp', title: 'Manajemen Master Data Siswa' },
+      { src: 'SPK MOORA/Data Kriteria.webp', title: 'Kelola Kriteria & Bobot Assessment' },
+      { src: 'SPK MOORA/Data Nilai.webp', title: 'Input & Pemrosesan Data Nilai Siswa' },
+      { src: 'SPK MOORA/MOORA.webp', title: 'Matriks Decision & Calculation MOORA' },
+      { src: 'SPK MOORA/Hasil MOORA.webp', title: 'Hasil Perankingan Siswa Berprestasi' },
+      { src: 'SPK MOORA/Kelola User.webp', title: 'Manajemen Pengguna & Role Access' }
     ],
     description: `
       <p>Sistem berbasis web untuk membantu sekolah menentukan siswa berprestasi secara otomatis, sistematis, dan objektif berbasis metode MOORA (Multi-Objective Optimization on the basis of Ratio Analysis).</p>
@@ -127,10 +127,10 @@ const projectData = {
     title: 'Sistem Informasi Presensi Siswa MTs',
     techStack: ['Python', 'Django Framework', 'MySQL', 'HTML5', 'CSS3', 'JavaScript', 'Tailwind CSS'],
     images: [
-      { src: 'Presensi MTs/Dashboard.png', title: 'Dashboard Statistik & Overview Presensi' },
-      { src: 'Presensi MTs/Login.png', title: 'Halaman Login Admin & Guru' },
-      { src: 'Presensi MTs/Presensi.png', title: 'Modul Pencatatan Kehadiran Siswa Per Kelas' },
-      { src: 'Presensi MTs/Rekap.png', title: 'Rekapitulasi Kehadiran & Ekspor Excel' }
+      { src: 'Presensi MTs/Dashboard.webp', title: 'Dashboard Statistik & Overview Presensi' },
+      { src: 'Presensi MTs/Login.webp', title: 'Halaman Login Admin & Guru' },
+      { src: 'Presensi MTs/Presensi.webp', title: 'Modul Pencatatan Kehadiran Siswa Per Kelas' },
+      { src: 'Presensi MTs/Rekap.webp', title: 'Rekapitulasi Kehadiran & Ekspor Excel' }
     ],
     description: `
       <p>Sistem Informasi Manajemen Presensi Siswa dirancang khusus untuk mempermudah guru dan sekolah dalam mencatat, memantau, dan merekapitulasi data kehadiran siswa secara akurat dan real-time.</p>
